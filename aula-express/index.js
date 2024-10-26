@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
   // Rotas
   if (req.url === "/" && req.method === "GET") {
     res.writeHead(200); // Status OK
-    res.end("Bem-vindo à página inicial!");
+    res.end("Bem-vindo à página inicial!"); // Resposta da requisição
   } else if (req.url === "/sobre" && req.method === "GET") {
     res.writeHead(200);
     res.end("Esta é a página Sobre.");
